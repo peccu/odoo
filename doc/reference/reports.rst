@@ -313,4 +313,11 @@ For example, you can access a Sale Order report in html mode by going to
 Or you can access the pdf version at
 \http://<server-address>/report/pdf/sale.report_saleorder/38
 
+Wkhtmltopdf configuration
+=========================
+
+`wkhtmltopdf` requires internal reports url.
+If your odoo is running with reverse proxy, please set `report.url` to `http://127.0.0.1:8069` or so (internal IP and port).
+`report.url` is in Settings -> Parameters -> System Parameters.
+
 .. _wkhtmltopdf: http://wkhtmltopdf.org
